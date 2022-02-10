@@ -1,0 +1,1092 @@
+<!--- 
+RAFLIPEDIA INDONESIA
+--->
+<html>
+<head>
+<title>Website Resmi Kelas</title>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta property="description" content="Website Resmi Kelas"/>
+<meta property="og:title" content="Website Resmi Kelas" />
+<meta name="author" content="Rajif Faishal Habibi">
+<meta name="copyright" content="Rajif Faishal Habibi">
+<meta name="theme-color" content="#000">
+<link rel="icon" type="img/png" href="img/icon.png" sizes="32x32"/>
+<style>
+/* CSS BY RAFLIPEDIA INDONESIA */
+
+
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Teko:300,400,500");
+*,*:before,*:after {
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+body {
+	background:#000;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	margin:0;
+}
+.footer {
+	background-color:#fff;
+	height:auto;
+	width:100%;
+	border:4px;
+	border-top:1px solid #6cf;
+	color:#6cf;
+	padding:10px;
+	position:fixed;
+	bottom:0;
+	overflow:hidden;
+	z-index: 1;
+}
+.footer h4 {
+    font-family: 'Teko';
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+
+.box {
+	display:block;
+	position:relative;
+	width:50%;
+	background:#fff;
+	margin:10% auto;
+	padding:10px;
+	border:1px solid #6cf;
+	border-radius:5px;
+}
+.tombol {
+	background:#6cf;
+	position:relative;
+	width:49%;
+	height:40px;
+	color:#fff;
+	padding:8px;
+	border:1px solid #6cf;
+	border-radius:3px;
+	font-size:1.2em;
+	font-weight:300;
+	text-align:center;
+	letter-spacing:1px;
+	outline:none;
+	font-family:'Teko';
+}
+.tombol:hover {
+	background:#000;
+	position:relative;
+	width:49%;
+	height:40px;
+	color:#fff;
+	padding:8px;
+	border:1px solid #6cf;
+	font-size:1.2em;
+	font-weight:300;
+	text-align:center;
+	letter-spacing:1px;
+	outline:none;
+	font-family:'Teko';
+}
+
+.garis-tengah {
+	display:block;
+	margin-left:5%;
+	margin-right:5%;
+	margin-top:-8px;
+	overflow:hidden;
+	text-align:center;
+	white-space:nowrap;
+	width:90%;
+}
+.garis-tengah>span {
+	display:inline-block;
+	position:relative;
+	color:#fff;
+	cursor:default;
+	font-size:2.5em;
+	font-family:'Teko';
+	text-shadow:1px 2px 1px #6cf;
+	font-weight:300;
+}
+.garis-tengah>span1 {
+	display:inline-block;
+	position:relative;
+	color:#ff0;
+	cursor:default;
+	font-size:2.5em;
+	font-family:'Teko';
+	text-shadow:1px 2px 1px #ff0;
+	font-weight:300;
+	letter-spacing:1px;
+}
+.garis-tengah>span:before,.garis-tengah>span:after {
+	background:#6cf;
+	content:"";
+	height:1px;
+	position:absolute;
+	top:50%;
+	width:9999px;
+	margin:0;
+}
+.garis-tengah>span:before {
+	margin-right:15px;
+	right:100%;
+}
+.garis-tengah>span:after {
+	left:100%;
+	margin-left: 15px;
+}
+
+#pelajaran {
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:9999;
+	visibility:hidden;
+	background-color:rgba(255,255,255,0.7);
+	overflow:scroll;
+}
+#pelajaran:target {
+	visibility:visible;
+}
+#piket {
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:9999;
+	visibility:hidden;
+	background-color:rgba(255,255,255,0.7);
+	overflow:scroll;
+}
+#piket:target {
+	visibility:visible;
+}
+#absen {
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:9999;
+	visibility:hidden;
+	background-color:rgba(255,255,255,0.7);
+	overflow:scroll;
+}
+#absen:target {
+	visibility:visible;
+}
+.box-popup {
+	background:#fff;
+	border:1px solid #6cf;
+	border-radius:5px;
+	width:50%;
+	height:auto;
+	position:relative;
+	padding:5px;
+	text-align:center;
+	margin:15% auto;
+}
+.close {
+	width:20px;
+	height:20px;
+	background:#fff;
+	border-radius:;
+	border:1px solid #6cf;
+	border-radius:50%;
+	display:block;
+	text-align:center;
+	color:#6cf;
+	text-decoration:none;
+	position:absolute;
+	top:-10px;
+	right:-10px;
+}
+.scroll {
+	overflow:scroll;
+	height:500px;
+	scrollbar-face-color:#CE7E00;
+	scrollbar-shadow-color:#FFFFFF;
+	scrollbar-highlight-color:#6F4709;
+	scrollbar-3dlight-color:#11111;
+	scrollbar-darkshadow-color:#6F4709;
+	scrollbar-track-color:#FFE8C1;
+	scrollbar-arrow-color: #6F4709;
+}
+
+
+ 
+ 
+table {
+width: 300;
+border: 1;
+border-collapse: collapse;
+border-color: #6cf;
+font-family:'Teko';
+}
+
+hr.garis {
+	width:100%;
+	border:1px solid #6cf;
+}
+h4 {
+	font-family:'Teko';
+	font-weight:300;
+	font-size:1.8em;
+	margin:0;
+	color:#6cf;
+}
+h4.berhasil {
+	font-family:'Teko';
+	font-weight:300;
+	font-size:1.6em;
+	margin:0;
+	color:#6cf;
+}
+.waktu {
+	border:1px solid #6cf;
+	border-radius:2px;
+	width:30%;
+	height:auto;
+	font-family:'Teko';
+	font-weight:300;
+	font-size:15px;
+	color: #6cf;
+}
+
+
+.loading {
+	position:fixed;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:100%;
+	z-index:9999;
+	background: url("../img/icon.png") center no-repeat #f3f3f3;
+}
+
+
+/* elemen versi hp */
+@media only screen and (max-width:500px) {
+table {
+width: 300;
+border: 1;
+border-collapse: collapse;
+border-color: #6cf;
+font-family:'Teko';
+}
+.box {
+		width:95%;
+		display:block;
+		zoom:1;
+	}
+	.footer {
+		zoom:0.4;
+	}
+	.box-popup {
+		width:90%;
+		height: auto;
+	}
+}
+</style>
+<body>
+<!--Kode untuk mematikan fungsi klik kanan di blog-->
+<script type="text/javascript">
+function mousedwn(e){try{if(event.button==2||event.button==3)return false}catch(e){if(e.which==3)return false}}document.oncontextmenu=function(){return false};document.ondragstart=function(){return false};document.onmousedown=mousedwn
+</script>
+<!--Kode untuk mencegah shorcut keyboard, view source dll.-->
+<script type="text/javascript">
+window.addEventListener("keydown",function(e){if(e.ctrlKey&&(e.which==65||e.which==66||e.which==67||e.which==73||e.which==80||e.which==83||e.which==85||e.which==86)){e.preventDefault()}});document.keypress=function(e){if(e.ctrlKey&&(e.which==65||e.which==66||e.which==67||e.which==73||e.which==80||e.which==83||e.which==85||e.which==86)){}return false}
+</script>
+<!--script type="text/javascript">
+document.onkeydown=function(e){e=e||window.event;if(e.keyCode==123||e.keyCode==18){return false}}
+</script>
+<div class="loading"></div-->
+
+</br>
+
+<div class="garis-tengah">
+	<span>WEBSITE KELAS 8i</span>
+</div>
+
+<!--- POP UP PELAJARAN --->
+<div id="pelajaran">
+<div class="box-popup">
+<a href="#close" class="close" title="Close">&times;</a>
+<center>
+		<h4 class="berhasil">JADWAL PELAJARAN</h4>
+		<hr class="garis">
+		<div class="scroll">
+		<div class="tab-container">
+		<div class="tab">
+		<button onclick="openHero(event, 'pelsenin');" id="defaultOpen"  class="tombol">Senin</button>
+		
+    <button onclick="openHero(event, 'selasa');" class="tombol">Selasa</button>
+	</br>
+	</br>
+    <button onclick="openHero(event, 'rabu');" class="tombol">Rabu</button>
+    
+    <button onclick="openHero(event, 'kamis');" class="tombol">Kamis</button>
+	</br>
+	</br>
+	<button onclick="openHero(event, 'jumat');" class="tombol">Jum'at</button>
+    <button onclick="openHero(event, 'sabtu');" class="tombol">Sabtu</button>
+	</br>
+	</br>
+</div> <!--- tab --->
+
+<div id="pelsenin" class="gallery">
+	<table width="350" border="1" align="center">
+	<hr class="garis">
+<h4 class="berhasil">SENIN</h4>
+	<tr bgcolor="#36c2ff">
+		<th rowspan="2">No</th>
+		<th rowspan="2">Nama Pelajaran</th>
+	</tr>
+	<tr>
+		<tr>
+			<td>
+				<center>1</td>
+			<td>BAHASA INGGRIS</td>
+		</tr>
+		<tr>
+			<td>
+				<center>2</td>
+			<td>IPS</td>
+		</tr>
+		<tr>
+			<td>
+				<center>3</td>
+			<td>AKIDAH AKHLAK</td>
+		</tr>
+		<tr>
+			<td>
+				<center>4</td>
+			<td>IPA</td>
+		</tr>
+		<tr>
+			<td>
+				<center>5</td>
+			<td>PKN</td>
+		</tr>
+		</table>
+	</div>
+	<div id="selasa" class="gallery">
+	<table width="350" border="1" align="center">
+		<hr class="garis">
+<h4 class="berhasil">SELASA</h4>
+	<tr bgcolor="#36c2ff">
+		<th rowspan="2">No</th>
+		<th rowspan="2">Nama Pelajaran</th>
+	</tr>
+	<tr>
+		<tr>
+			<td>
+				<center>1</td>
+			<td>MATEMATIKA</td>
+		</tr>
+		<tr>
+			<td>
+				<center>2</td>
+			<td>IPA</td>
+		</tr>
+		<tr>
+			<td>
+				<center>3</td>
+			<td>PKN</td>
+		</tr>
+		<tr>
+			<td>
+				<center>4</td>
+			<td>BAHASA INDONESIA</td>
+		</tr>
+		</table>
+	</div>
+	<div id="rabu" class="gallery">
+		<table width="350" border="1" align="center">
+				<hr class="garis">
+<h4 class="berhasil">RABU</h4>
+		<tr bgcolor="#36c2ff">
+			<th rowspan="2">No</th>
+			<th rowspan="2">Nama Pelajaran</th>
+		</tr>
+		<tr>
+			<tr>
+				<td>
+					<center>1</td>
+				<td>FIQIH</td>
+			</tr>
+			<tr>
+				<td>
+					<center>2</td>
+				<td>MATEMATIKA</td>
+			</tr>
+			<tr>
+				<td>
+					<center>3</td>
+				<td>BAHASA INDONESIA</td>
+			</tr>
+			<tr>
+				<td>
+					<center>4</td>
+				<td>IPS</td>
+			</tr>
+			<tr>
+				<td>
+					<center>5</td>
+				<td>BAHASA JAWA</td>
+			</tr>
+			</table>
+		</div>
+		<div id="kamis" class="gallery">
+					<hr class="garis">
+<h4 class="berhasil">KAMIS</h4>
+			<table width="350" border="1" align="center">
+			<tr bgcolor="#36c2ff">
+				<th rowspan="2">No</th>
+				<th rowspan="2">Nama Pelajaran</th>
+			</tr>
+			<tr>
+				<tr>
+					<td>
+						<center>1</td>
+					<td>BAHASA INGGRIS</td>
+				</tr>
+				<tr>
+					<td>
+						<center>2</td>
+					<td>QURDIS</td>
+				</tr>
+				<tr>
+					<td>
+						<center>3</td>
+					<td>IPA</td>
+				</tr>
+				<tr>
+					<td>
+						<center>4</td>
+					<td>PRAKARYA</td>
+				</tr>
+				<tr>
+					<td>
+						<center>5</td>
+					<td>BAHASA INDONESIA</td>
+				</tr>
+				</table>
+			</div>
+			<div id="jumat" class="gallery">
+						<hr class="garis">
+<h4 class="berhasil">JUMAT</h4>
+				<table width="350" border="1" align="center">
+				<tr bgcolor="#36c2ff">
+					<th rowspan="2">No</th>
+					<th rowspan="2">Nama Pelajaran</th>
+				</tr>
+				<tr>
+					<tr>
+						<td>
+							<center>1</td>
+						<td>MATEMATIKA</td>
+					</tr>
+					<tr>
+						<td>
+							<center>2</td>
+						<td>BAHAS ARAB</td>
+					</tr>
+					<tr>
+						<td>
+							<center>3</td>
+						<td>SENI BUDAYA</td>
+					</tr>
+					</table>
+				</div>
+				<div id="sabtu" class="gallery">
+<hr class="garis">
+<h4 class="berhasil">SABTU</h4>
+					<table width="350" border="1" align="center">
+					<tr bgcolor="#36c2ff">
+						<th rowspan="2">No</th>
+						<th rowspan="2">Nama Pelajaran</th>
+					</tr>
+					<tr>
+						<tr>
+							<td>
+								<center>1</td>
+							<td>PENJAS</td>
+						</tr>
+						<tr>
+							<td>
+								<center>2</td>
+							<td>BAHASA ARAB</td>
+						</tr>
+						<tr>
+							<td>
+								<center>3</td>
+							<td>SKI</td>
+						</tr>
+						<tr>
+							<td>
+								<center>4</td>
+							<td>BAHAS INDONESIA</td>
+						</tr>
+						</table>
+					</div>
+</center></div>
+</div>
+
+</div>
+</div>
+<!--- /POP UP PELAJARAN --->
+
+
+<!--- POP UP PIKET --->
+<div id="piket">
+<div class="box-popup">
+<a href="#close" class="close" title="Close">&times;</a>
+<center>
+		<h4 class="berhasil">JADWAL PIKET</h4>
+		<hr class="garis">
+		<div class="scroll">
+		<div class="tab-container">
+		<div class="tab">
+		<button onclick="openHero(event, 'psenin');" class="tombol">Senin</button>
+		
+    <button onclick="openHero(event, 'pselasa');" class="tombol">Selasa</button>
+	</br>
+	</br>
+    <button onclick="openHero(event, 'prabu');" class="tombol">Rabu</button>
+    
+    <button onclick="openHero(event, 'pkamis');" class="tombol">Kamis</button>
+	</br>
+	</br>
+	<button onclick="openHero(event, 'pjumat');" class="tombol">Jum'at</button>
+    <button onclick="openHero(event, 'psabtu');" class="tombol">Sabtu</button>
+	</br>
+	</br>
+</div> <!--- tab --->
+
+<div id="psenin" class="gallery">
+<hr class="garis">
+<h4 class="berhasil">SENIN</h4>
+	<table width="350" border="1" align="center">
+	<tr bgcolor="#36c2ff">
+		<th rowspan="2">No</th>
+		<th rowspan="2">Nama Pelajar</th>
+	</tr>
+	<tr>
+		<tr>
+			<td>
+				<center>1</td>
+			<td>Laura</td>
+		</tr>
+		<tr>
+			<td>
+				<center>2</td>
+			<td>Maudy</td>
+		</tr>
+		<tr>
+			<td>
+				<center>3</td>
+			<td>Vicky</td>
+		</tr>
+		<tr>
+			<td>
+				<center>4</td>
+			<td>Ashila</td>
+		</tr>
+		<tr>
+			<td>
+				<center>5</td>
+			<td>Alif</td>
+		</tr>
+		<tr>
+			<td>
+				<center>6</td>
+			<td>Syafa</td>
+		</tr>
+		</table>
+	</div>
+	<div id="pselasa" class="gallery">
+		<hr class="garis">
+<h4 class="berhasil">SELASA</h4>
+		<table width="350" border="1" align="center">
+		<tr bgcolor="#36c2ff">
+			<th rowspan="2">No</th>
+			<th rowspan="2">Nama Pelajar</th>
+		</tr>
+		<tr>
+			<tr>
+				<td>
+					<center>1</td>
+				<td>Naufal</td>
+			</tr>
+			<tr>
+				<td>
+					<center>2</td>
+				<td>Habibi</td>
+			</tr>
+			<tr>
+				<td>
+					<center>3</td>
+				<td>Rachel</td>
+			</tr>
+			<tr>
+				<td>
+					<center>4</td>
+				<td>Nanda</td>
+			</tr>
+			<tr>
+				<td>
+					<center>5</td>
+				<td>Taqiya</td>
+			</tr>
+			</table>
+		</div>
+	<div id="prabu" class="gallery">
+		<hr class="garis">
+<h4 class="berhasil">RABU</h4>
+		<table width="350" border="1" align="center">
+		<tr bgcolor="#36c2ff">
+			<th rowspan="2">No</th>
+			<th rowspan="2">Nama Pelajar</th>
+		</tr>
+		<tr>
+			<tr>
+				<td>
+					<center>1</td>
+				<td>Kayla</td>
+			</tr>
+			<tr>
+				<td>
+					<center>2</td>
+				<td>Naya</td>
+			</tr>
+			<tr>
+				<td>
+					<center>3</td>
+				<td>Sinta</td>
+			</tr>
+			<tr>
+				<td>
+					<center>4</td>
+				<td>Rena</td>
+			</tr>
+			<tr>
+				<td>
+					<center>5</td>
+				<td>Viana</td>
+			</tr>
+			</table>
+		</div>
+		<div id="pkamis" class="gallery">
+<hr class="garis">
+<h4 class="berhasil">KAMIS</h4>
+			<table width="350" border="1" align="center">
+			<tr bgcolor="#36c2ff">
+				<th rowspan="2">No</th>
+				<th rowspan="2">Nama Pelajar</th>
+			</tr>
+			<tr>
+				<tr>
+					<td>
+						<center>1</td>
+					<td>Tasya</td>
+				</tr>
+				<tr>
+					<td>
+						<center>2</td>
+					<td>Nilna</td>
+				</tr>
+				<tr>
+					<td>
+						<center>3</td>
+					<td>Deva</td>
+				</tr>
+				<tr>
+					<td>
+						<center>4</td>
+					<td>Aura</td>
+				</tr>
+				<tr>
+					<td>
+						<center>5</td>
+					<td>Willy</td>
+				</tr>
+				</table>
+			</div>
+			<div id="pjumat" class="gallery">
+				<hr class="garis">
+<h4 class="berhasil">JUM'AT</h4>
+				<table width="350" border="1" align="center">
+				<tr bgcolor="#36c2ff">
+					<th rowspan="2">No</th>
+					<th rowspan="2">Nama Pelajar</th>
+				</tr>
+				<tr>
+					<tr>
+						<td>
+							<center>1</td>
+						<td>Bahar</td>
+					</tr>
+					<tr>
+						<td>
+							<center>2</td>
+						<td>Dafa</td>
+					</tr>
+					<tr>
+						<td> 
+							<center>3</td>
+						<td>Fatah</td>
+					</tr>
+					<tr>
+						<td>
+							<center>4</td>
+						<td>Pina</td>
+					</tr>
+					<tr>
+						<td>
+							<center>5</td>
+						<td>Sasa</td>
+					</tr>
+					<tr>
+						<td>
+							<center>6</td>
+						<td>Sila</td>						
+					</tr>
+					</table>
+				</div>
+				<div id="psabtu" class="gallery">
+				<hr class="garis">
+<h4 class="berhasil">SABTU</h4>
+				<center>
+				<table width="350" border="1" align="center">
+				<tr bgcolor="#36c2ff">
+					<th rowspan="2">No</th>
+					<th rowspan="2">Nama Pelajar</th>
+				</tr>
+				<tr>
+					<tr>
+						<td>
+							<center>1</td>
+						<td>Aulia</td>
+					</tr>
+					<tr>
+						<td>
+							<center>2</td>
+						<td>Rona</td>
+					</tr>
+					<tr>
+						<td>
+							<center>3</td>
+						<td>Rayhan</td>
+					</tr>
+					<tr>
+						<td>
+							<center>4</td>
+						<td>Najwa</td>
+					</tr>
+					<tr>
+						<td>
+							<center>5</td>
+						<td>Syifa</td>
+    		        </tr>
+					<tr>
+						<td>
+							<center>6</td>
+						<td>Reva</td>	
+					</tr>
+					</table>
+				</div>
+					</center>
+</center></div>
+</div>
+</div>
+<!--- /POP UP PIKET --->
+
+
+
+
+<div id="pselasa" class="gallery">
+		<hr class="garis">
+<h4 class="berhasil">SELASA</h4>
+		<table width="350" border="1" align="center">
+		<tr bgcolor="#36c2ff">
+			<th rowspan="2">No</th>
+			<th rowspan="2">Nama Pelajar</th>
+		</tr>
+		<tr>
+			<tr>
+				<td>
+					<center>1</td>
+				<td>Nama Pelajar Selasa</td>
+			</tr>
+			<tr>
+				<td>
+					<center>2</td>
+				<td>Nama Pelajar Selasa</td>
+			</tr>
+			<tr>
+				<td>
+					<center>3</td>
+				<td>Nama Pelajar Selasa</td>
+			</tr>
+			<tr>
+				<td>
+					<center>4</td>
+				<td>Nama Pelajar Selasa</td>
+			</tr>
+			<tr>
+				<td>
+					<center>5</td>
+				<td>Nama Pelajar Selasa</td>
+			</tr>
+			</table>
+		</div>
+	<div id="prabu" class="gallery">
+		<hr class="garis">
+<h4 class="berhasil">RABU</h4>
+		<table width="350" border="1" align="center">
+		<tr bgcolor="#36c2ff">
+			<th rowspan="2">No</th>
+			<th rowspan="2">Nama Pelajar</th>
+		</tr>
+		<tr>
+			<tr>
+				<td>
+					<center>1</td>
+				<td>Nama Pelajar Rabu</td>
+			</tr>
+			<tr>
+				<td>
+					<center>2</td>
+				<td>Nama Pelajar Rabu</td>
+			</tr>
+			<tr>
+				<td>
+					<center>3</td>
+				<td>Nama Pelajar Rabu</td>
+			</tr>
+			<tr>
+				<td>
+					<center>4</td>
+				<td>Nama Pelajar Rabu</td>
+			</tr>
+			<tr>
+				<td>
+					<center>5</td>
+				<td>Nama Pelajar Rabu</td>
+			</tr>
+			</table>
+		</div>
+		<div id="pkamis" class="gallery">
+<hr class="garis">
+<h4 class="berhasil">KAMIS</h4>
+			<table width="350" border="1" align="center">
+			<tr bgcolor="#36c2ff">
+				<th rowspan="2">No</th>
+				<th rowspan="2">Nama Pelajar</th>
+			</tr>
+			<tr>
+				<tr>
+					<td>
+						<center>1</td>
+					<td>Nama Pelajar Kamis</td>
+				</tr>
+				<tr>
+					<td>
+						<center>2</td>
+					<td>Nama Pelajar Kamis</td>
+				</tr>
+				<tr>
+					<td>
+						<center>3</td>
+					<td>Nama Pelajar Kamis</td>
+				</tr>
+				<tr>
+					<td>
+						<center>4</td>
+					<td>Nama Pelajar Kamis</td>
+				</tr>
+				<tr>
+					<td>
+						<center>5</td>
+					<td>Nama Pelajar Kamis</td>
+				</tr>
+				</table>
+			</div>
+			<div id="pjumat" class="gallery">
+				<hr class="garis">
+<h4 class="berhasil">JUM'AT</h4>
+				<table width="350" border="1" align="center">
+				<tr bgcolor="#36c2ff">
+					<th rowspan="2">No</th>
+					<th rowspan="2">Nama Pelajar</th>
+				</tr>
+				<tr>
+					<tr>
+						<td>
+							<center>1</td>
+						<td>Nama Pelajar Kamis</td>
+					</tr>
+					<tr>
+						<td>
+							<center>2</td>
+						<td>Nama Pelajar Kamis</td>
+					</tr>
+					<tr>
+						<td>
+							<center>3</td>
+						<td>Nama Pelajar Kamis</td>
+					</tr>
+					<tr>
+						<td>
+							<center>4</td>
+						<td>Nama Pelajar Kamis</td>
+					</tr>
+					<tr>
+						<td>
+							<center>5</td>
+						<td>Nama Pelajar Kamis</td>
+					</tr>
+					</table>
+				</div>
+				<div id="psabtu" class="gallery">
+				<hr class="garis">
+<h4 class="berhasil">SABTU</h4>
+				<center>
+				<table width="350" border="1" align="center">
+				<tr bgcolor="#36c2ff">
+					<th rowspan="2">No</th>
+					<th rowspan="2">Nama Pelajar</th>
+				</tr>
+				<tr>
+					<tr>
+						<td>
+							<center>1</td>
+						<td>Nama Pelajar Sabtu</td>
+					</tr>
+					<tr>
+						<td>
+							<center>2</td>
+						<td>Nama Pelajar Sabtu</td>
+					</tr>
+					<tr>
+						<td>
+							<center>3</td>
+						<td>Nama Pelajar Sabtu</td>
+					</tr>
+					<tr>
+						<td>
+							<center>4</td>
+						<td>Nama Pelajar Sabtu</td>
+					</tr>
+					<tr>
+						<td>
+							<center>5</td>
+						<td>Nama Pelajar Sabtu</td>
+					</tr>
+					</table>
+				</div>
+					</center>
+</center></div>
+</div>
+</div>
+<!--- /POP UP PIKET --->
+
+
+
+
+
+<div class="box">
+
+<center>
+<div class="waktu">
+<script>
+function showTime() {
+		    var a_p = "";
+		    var today = new Date();
+		    var curr_hour = today.getHours();
+		    var curr_minute = today.getMinutes();
+		    var curr_second = today.getSeconds();
+		    if (curr_hour < 24) {
+		        a_p = "WIB";
+		    } else {
+		        a_p = "WIB";
+		    }
+		    if (curr_hour == 0) {
+		        curr_hour = 24;
+		    }
+		    if (curr_hour > 24) {
+		        curr_hour = curr_hour - 12;
+		    }
+		    curr_hour = checkTime(curr_hour);
+		    curr_minute = checkTime(curr_minute);
+		    curr_second = checkTime(curr_second);
+		 document.getElementById('clock').innerHTML=curr_hour + ":" + curr_minute + ":" + curr_second + " " + a_p;
+		    }
+ 
+		function checkTime(i) {
+		    if (i < 10) {
+		        i = "0" + i;
+		    }
+		    return i;
+		}
+		setInterval(showTime, 500);
+</script>
+	<div id="clock"></div>
+		<script>
+		var months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+			var myDays = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jum&#39;at', 'Sabtu'];
+			var date = new Date();
+			var day = date.getDate();
+			var month = date.getMonth();
+			var thisDay = date.getDay(),
+			    thisDay = myDays[thisDay];
+			var yy = date.getYear();
+			var year = (yy < 1000) ? yy + 1900 : yy;
+			document.write(thisDay + ', ' + day + ' ' + months[month] + ' ' + year);
+		</script></div></center></br>
+</center>
+
+	<button onclick="location.href='#pelajaran';" class="tombol">Jadwal Pelajaran</button>
+    <button onclick="location.href='#piket';" class="tombol">Jadwal Piket</button>
+	</br>
+	</br>
+</div>
+
+<div class="footer">
+<h4>Made by arpantek</h4>
+</div>
+
+<script type="text/javascript">
+function openHero(evt, heroClass) {
+    var i, gallery, tab;
+    gallery = document.getElementsByClassName("gallery");
+    for (i = 0; i < gallery.length; i++) {
+        gallery[i].style.display = "none";
+    }
+    tab = document.getElementsByClassName("tab");
+    for (i = 0; i < tab.length; i++) {
+        tab[i].className = tab[i].className.replace(" active", "");
+    }
+    document.getElementById(heroClass).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();
+</script>
+
+
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<!--script> $(window).load(function() { $(".loading").fadeOut("slow"); }); </script-->
+</body>
+</html>
+<!--- 
+RAFLIPEDIA INDONESIA
+--->
